@@ -27,6 +27,16 @@ After intialization, you can include it using:
 ```
     var Logger = require('log-tag').getInstance();
 ```
+
+Configuration options are as follows:
+
+| Option     | Default      | Use                                                                     |
+| :--------: | :----------: | :---------------------------------------------------------------------: |
+| useEnv     | `false`      | Specifies whether or not to use process.env.                            |
+| envTagKey  | `'LOG_TAGS'` | The env key to use for activating tags.                                 |
+| tags       | `['*']`      | An array of all the tags currently enabled. I.e. `['warning', 'error']` |
+| defaultTag | `'log'`      | The default tag to use if a tag is not provided.                        |
+
 # Usage
 With tags `critical` and `error` appearing, logging like so:
 ```
