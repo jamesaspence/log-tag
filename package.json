@@ -15,5 +15,9 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^1.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesaspence/log-tag"
   }
 }
