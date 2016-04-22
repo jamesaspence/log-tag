@@ -14,16 +14,30 @@ what shows, and what doesn't.
 //We need to init before we use.
 //We can pass configuration variables here.
 //Available options:
-var configuration = {
+var config = {
     useEnv: false,
     tags: [
         'critical',
         'error'
     ]
 }
-var Logger = require('log-tag').init();
+var Logger = require('log-tag').init(config);
 ```
-After intialization, you can include it using:
+Running init multiple times won't re-instantiate the Logger instance - it will return the existing instance.
+
+However, if you want to force a brand new creation of Logger:
+```
+var config = {
+    useEnv: false,
+    tags: [
+        'critical'
+    ]
+}
+//Even if we've already instantiated our logger, this will recreate it, and return it.
+var Logger = require('log-tag').init(config, true);
+```
+
+After intialization, you can include it anywhere else using:
 ```
     var Logger = require('log-tag').getInstance();
 ```
