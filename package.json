@@ -1,6 +1,6 @@
 {
   "name": "log-tag",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A tagging and logging utility for NodeJS.",
   "main": "lib/factory.js",
   "scripts": {
