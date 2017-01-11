@@ -8,7 +8,11 @@ them in the code, but disable them? Use tags to determine
 what shows, and what doesn't.
 
 # Installation / Configuration
-`npm i --save jamesspence/log-tag`
+Available via npm / yarn:
+
+`npm i --save log-tag`
+
+`yarn add log-tag`
 
 ```
 //We need to init before we use.
